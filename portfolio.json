@@ -1,7 +1,7 @@
 {
   "name": "Aravindh Manavalan",
   "label": "Analytics Engineer & Data Scientist",
-  "image_path": "img/aravindh-profile.png",
+  "image_path": "portfolio_media/profile.png",
   "contact": {
     "email": "ara.manavalan@gmail.com",
     "phone": "(206) 999-6254",
@@ -86,11 +86,11 @@
       ],
       "images": [
         {
-          "img_path": "img/swift-counter-demo.png",
+          "img_path": "portfolio_media/tracker-results.png",
           "caption": "YOLOv11 Detection Results"
         },
         {
-          "img_path": "img/swift-tracking.png",
+          "img_path": "portfolio_media/tracking-viz.png",
           "caption": "Trajectory Tracking Visualization"
         }
       ]
@@ -107,11 +107,11 @@
       ],
       "images": [
         {
-          "img_path": "img/steamviz-dashboard.png",
+          "img_path": "portfolio_media/dashboard-specific-view.png",
           "caption": "Steam Games Market Analysis Dashboard"
         },
         {
-          "img_path": "img/steamviz-trends.png",
+          "img_path": "portfolio_media/dashboard-user-behavior.png",
           "caption": "Player Behavior Trends Visualization"
         }
       ]
@@ -128,12 +128,8 @@
       ],
       "images": [
         {
-          "img_path": "img/quizzatron-interface.png",
+          "img_path": "portfolio_media/quizzatron-home.png",
           "caption": "Quiz Generation Interface"
-        },
-        {
-          "img_path": "img/quizzatron-results.png",
-          "caption": "Generated Quiz Example"
         }
       ]
     }
@@ -150,7 +146,7 @@
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
-      "graduation_date": "03/01/2026"
+      "graduation_date": "March 2026"
     },
     {
       "institution": "PSG College of Technology",
@@ -162,7 +158,7 @@
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
-      "graduation_date": "09/01/2020"
+      "graduation_date": "September 2020"
     }
   ],
   "skills": [
@@ -220,23 +216,11 @@
   "interests": [
     {
       "name": "AI & Machine Learning Research",
-      "summary": "Passionate about advancing AI applications in real-world scenarios, particularly in computer vision and natural language processing. Currently exploring agentic AI systems and their applications in business analytics.",
-      "images": [
-        {
-          "img_path": "img/ai-research.png",
-          "caption": "Working on AI Models"
-        }
-      ]
+      "summary": "Passionate about advancing AI applications in real-world scenarios, particularly in computer vision and natural language processing. Currently exploring agentic AI systems and their applications in business analytics."
     },
     {
       "name": "Data Science Innovation",
-      "summary": "Enthusiastic about developing innovative data science solutions that bridge the gap between complex analytics and practical business applications. Enjoys working on projects that combine technical depth with real-world impact.",
-      "images": [
-        {
-          "img_path": "img/data-science.png",
-          "caption": "Data Science Projects"
-        }
-      ]
+      "summary": "Enthusiastic about developing innovative data science solutions that bridge the gap between complex analytics and practical business applications. Enjoys working on projects that combine technical depth with real-world impact."
     }
   ],
   "languages": [
