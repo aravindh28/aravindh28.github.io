@@ -261,15 +261,17 @@
                 {% for skill in skills %}
                   <li>
                     <h3>{{ skill.name }}</h3>
-                    <div class="skill-bar">
-                      <div class="skill-bar-fill w-{{ skill.proficiency }}"
-                           role="meter"
-                           aria-valuenow="{{ skill.proficiency }}"
-                           aria-valuemin="0"
-                           aria-valuemax="100">
-                        <span class="skill-bar-label">{{ skill.proficiency_label }}</span>
+                    {% if skill.proficiency %}
+                      <div class="skill-bar">
+                        <div class="skill-bar-fill w-{{ skill.proficiency }}"
+                             role="meter"
+                             aria-valuenow="{{ skill.proficiency }}"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
+                          <span class="skill-bar-label">{{ skill.proficiency_label }}</span>
+                        </div>
                       </div>
-                    </div>
+                    {% endif %}
                   </li>
                 {% endfor %}
               </ul>

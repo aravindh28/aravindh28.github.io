@@ -7,7 +7,7 @@
     "phone": "(206) 999-6254",
     "location": "Seattle, WA, USA"
   },
-  "summary": "Analytics Engineer and Data Scientist with 4+ years of experience at McKinsey & Company, currently pursuing Master's in Data Science at University of Washington. Specialized in building AI-powered analytics solutions, data pipelines, and automation tools that drive business impact. Proven track record of leading data modernization initiatives and developing innovative solutions from computer vision systems to LLM-based applications.",
+  "summary": "Data Science professional with 4+ years of experience, currently pursuing Master's in Data Science at University of Washington. Specialized in building AI-powered analytics solutions, data pipelines, and automation tools that drive business impact. Proven track record of leading data modernization initiatives and developing innovative solutions. Technologist with strong storytelling and communication skills. Experienced in cross-team collaboration, rapid solution development, and technical leadership with a focus on delivering measurable business outcomes.",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
@@ -146,7 +146,7 @@
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
-      "graduation_date": "March 2026"
+      "graduation_date": "03/01/2026"
     },
     {
       "institution": "PSG College of Technology",
@@ -158,69 +158,46 @@
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
-      "graduation_date": "September 2020"
+      "graduation_date": "09/01/2020"
     }
   ],
   "skills": [
     {
-      "name": "Data Analysis & Engineering",
-      "proficiency": 95,
-      "proficiency_label": "Expert"
+      "name": "Data Analysis"
     },
     {
-      "name": "Python Programming",
-      "proficiency": 95,
-      "proficiency_label": "Expert"
+      "name": "Data Engineering"
     },
     {
-      "name": "SQL & Databases",
-      "proficiency": 90,
-      "proficiency_label": "Advanced"
+      "name": "Statistical Analysis"
     },
     {
-      "name": "Machine Learning & AI",
-      "proficiency": 85,
-      "proficiency_label": "Advanced"
+      "name": "ETL"
     },
     {
-      "name": "Data Visualization",
-      "proficiency": 90,
-      "proficiency_label": "Advanced"
+      "name": "Data Pipelines"
     },
     {
-      "name": "ETL & Data Pipelines",
-      "proficiency": 88,
-      "proficiency_label": "Advanced"
+      "name": "Data Modeling"
     },
     {
-      "name": "Computer Vision",
-      "proficiency": 80,
-      "proficiency_label": "Proficient"
+      "name": "Predictive Analytics"
     },
     {
-      "name": "Statistical Analysis",
-      "proficiency": 85,
-      "proficiency_label": "Advanced"
+      "name": "AI Engineering"
     },
     {
-      "name": "Apache Spark & PySpark",
-      "proficiency": 75,
-      "proficiency_label": "Proficient"
-    },
-    {
-      "name": "Tableau & PowerBI",
-      "proficiency": 90,
-      "proficiency_label": "Advanced"
+      "name": "Product Ownership"
     }
   ],
   "interests": [
     {
-      "name": "AI & Machine Learning Research",
-      "summary": "Passionate about advancing AI applications in real-world scenarios, particularly in computer vision and natural language processing. Currently exploring agentic AI systems and their applications in business analytics."
+      "name": "Applied AI",
+      "summary": "Passionate about advancing AI applications in real-world scenarios, particularly in natural language processing and improving productivity. Currently exploring agentic AI systems and their applications in business analytics."
     },
     {
-      "name": "Data Science Innovation",
-      "summary": "Enthusiastic about developing innovative data science solutions that bridge the gap between complex analytics and practical business applications. Enjoys working on projects that combine technical depth with real-world impact."
+      "name": "Data Driven Storytelling",
+      "summary": "Enthusiastic about developing innovative data science solutions that enable conversations which bridge the gap between analytics and practical business applications. Enjoys working on projects that combine technical depth with real-world impact."
     }
   ],
   "languages": [
@@ -241,7 +218,7 @@
     {
       "name": "Available upon request",
       "relation": "Professional References",
-      "reference": "Professional references from McKinsey & Company colleagues and academic advisors are available upon request."
+      "reference": "Please reach out for references from colleagues and academic advisors."
     }
   ]
 }
