@@ -115,6 +115,9 @@
               {% for job in work_experience %}
                 <section>
                   <h3>
+                    {% if job.company_favicon %}
+                      <img src="{{ job.company_favicon }}" alt="{{ job.company }} logo" class="company-favicon">
+                    {% endif %}
                     {% if job.url %}
                       {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
                     {% else %}

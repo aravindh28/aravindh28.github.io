@@ -7,7 +7,7 @@
     "phone": "(206) 999-6254",
     "location": "Seattle, WA, USA"
   },
-  "summary": "Data Science professional with 4+ years of experience, currently pursuing Master's in Data Science at University of Washington. Specialized in building AI-powered analytics solutions, data pipelines, and automation tools that drive business impact. Proven track record of leading data modernization initiatives and developing innovative solutions. Technologist with strong storytelling and communication skills. Experienced in cross-team collaboration, rapid solution development, and technical leadership with a focus on delivering measurable business outcomes.",
+  "summary": "Analytics Engineer and Data Scientist with 4+ years of experience at McKinsey & Company, currently pursuing Master's in Data Science at University of Washington. Specialized in building AI-powered analytics solutions, data pipelines, and automation tools that drive business impact. Proven track record of leading data modernization initiatives and developing innovative solutions from computer vision systems to LLM-based applications.",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
@@ -24,6 +24,7 @@
   "work_experience": [
     {
       "company": "Lucid Motors",
+      "company_favicon": "portfolio_media/lucid-favicon.png",
       "position": "Analytics Engineer Intern",
       "url": "https://lucidmotors.com",
       "start_date": "06/01/2025",
@@ -36,6 +37,7 @@
     },
     {
       "company": "McKinsey & Company",
+      "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Data Analyst 1",
       "url": "https://mckinsey.com",
       "start_date": "08/01/2022",
@@ -50,6 +52,7 @@
     },
     {
       "company": "McKinsey & Company",
+      "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Junior Data Analyst",
       "url": "https://mckinsey.com",
       "start_date": "12/01/2020",
@@ -62,6 +65,7 @@
     },
     {
       "company": "McKinsey & Company",
+      "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Solution Delivery Intern",
       "url": "https://mckinsey.com",
       "start_date": "01/01/2020",
@@ -196,8 +200,8 @@
       "summary": "Passionate about advancing AI applications in real-world scenarios, particularly in natural language processing and improving productivity. Currently exploring agentic AI systems and their applications in business analytics."
     },
     {
-      "name": "Data Driven Storytelling",
-      "summary": "Enthusiastic about developing innovative data science solutions that enable conversations which bridge the gap between analytics and practical business applications. Enjoys working on projects that combine technical depth with real-world impact."
+      "name": "Data Science Innovation",
+      "summary": "Enthusiastic about developing innovative data science solutions that bridge the gap between complex analytics and practical business applications. Enjoys working on projects that combine technical depth with real-world impact."
     }
   ],
   "languages": [
@@ -218,7 +222,7 @@
     {
       "name": "Available upon request",
       "relation": "Professional References",
-      "reference": "Please reach out for references from colleagues and academic advisors."
+      "reference": "Professional references from McKinsey & Company colleagues and academic advisors are available upon request."
     }
   ]
 }
