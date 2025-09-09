@@ -116,7 +116,7 @@
                 <section>
                   <h3>
                     {% if job.company_favicon %}
-                      <img src="{{ job.company_favicon }}" alt="{{ job.company }} logo" class="company-favicon">
+                      <img src="{{ job.company_favicon }}" alt="{{ job.company }} logo" class="company-favicon" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle; border-radius: 3px;">
                     {% endif %}
                     {% if job.url %}
                       {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
