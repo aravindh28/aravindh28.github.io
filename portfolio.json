@@ -173,16 +173,10 @@
       "name": "Data Engineering"
     },
     {
-      "name": "Statistical Analysis"
+      "name": "Data Visualization"
     },
     {
       "name": "ETL"
-    },
-    {
-      "name": "Data Pipelines"
-    },
-    {
-      "name": "Data Modeling"
     },
     {
       "name": "Predictive Analytics"
@@ -204,6 +198,18 @@
       "summary": "Enthusiastic about developing innovative data science solutions that bridge the gap between complex analytics and practical business applications. Enjoys working on 0-1 products that deliver tangible value."
     }
   ],
+  "hobbies": {
+    "description": "Things I'm passionate about that we can talk over coffee",
+    "list": [
+      "Badminton",
+      "Fitness & Running",
+      "Cars and Motorcycles",
+      "Health",
+      "Smartphones",
+      "AI",
+      "Watches"
+    ]
+  },
   "languages": [
     {
       "language": "English",
@@ -222,7 +228,7 @@
     {
       "name": "Available upon request",
       "relation": "Professional References",
-      "reference": "Professional references from McKinsey & Company colleagues and academic advisors are available upon request."
+      "reference": "Professional references from colleagues and academic advisors are available upon request."
     }
   ]
 }

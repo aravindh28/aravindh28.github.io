@@ -319,6 +319,18 @@
               {% endfor %}
             </section>
           {% endif %}
+
+          {% if hobbies %}
+            <section>
+              <h2 class="section-heading">Hobbies</h2>
+              {% if hobbies.description %}<p class="section-description">{{ hobbies.description }}</p>{% endif %}
+              <ul class="hobby-list">
+                {% for hobby in hobbies.list %}
+                  <li>{{ hobby }}</li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
         </aside>
       </div>
     </div>
