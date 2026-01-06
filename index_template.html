@@ -263,18 +263,7 @@
               <ul class="unstyled-list">
                 {% for skill in skills %}
                   <li>
-                    <h3>{{ skill.name }}</h3>
-                    {% if skill.proficiency %}
-                      <div class="skill-bar">
-                        <div class="skill-bar-fill w-{{ skill.proficiency }}"
-                             role="meter"
-                             aria-valuenow="{{ skill.proficiency }}"
-                             aria-valuemin="0"
-                             aria-valuemax="100">
-                          <span class="skill-bar-label">{{ skill.proficiency_label }}</span>
-                        </div>
-                      </div>
-                    {% endif %}
+                    <strong>{{ skill.category }}:</strong> {{ skill.technologies }}
                   </li>
                 {% endfor %}
               </ul>

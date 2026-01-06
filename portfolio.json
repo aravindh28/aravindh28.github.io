@@ -25,9 +25,9 @@
     {
       "company": "Lucid Motors",
       "company_favicon": "portfolio_media/lucid-favicon.png",
-      "position": "Analytics Engineer Intern",
+      "position": "Analytics Engineer Co-op",
       "url": "https://lucidmotors.com",
-      "start_date": "06/01/2025",
+      "start_date": "Jun 2025",
       "end_date": "Present",
       "summary": "Leading AI and data modernization initiatives for Product & Pricing Strategy team",
       "highlights": [
@@ -40,8 +40,8 @@
       "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Data Analyst 1",
       "url": "https://mckinsey.com",
-      "start_date": "08/01/2022",
-      "end_date": "07/01/2024",
+      "start_date": "Aug 2022",
+      "end_date": "Jul 2024",
       "summary": "Led analytics initiatives and product development across multiple client engagements",
       "highlights": [
         "Led development of tech talent survey analytics pipeline as Product Lead, designing KNIME ETL workflows and Tableau dashboards that identified skill gaps across 20+ client projects",
@@ -55,8 +55,8 @@
       "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Junior Data Analyst",
       "url": "https://mckinsey.com",
-      "start_date": "12/01/2020",
-      "end_date": "07/01/2022",
+      "start_date": "Dec 2020",
+      "end_date": "Jul 2022",
       "summary": "Specialized in database management and IT service optimization analytics",
       "highlights": [
         "Spearheaded database setup and ETL pipeline revamp for ITSM datasets, improving client productivity through KPIs and statistical analysis in 10+ transformations",
@@ -68,8 +68,8 @@
       "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Solution Delivery Intern",
       "url": "https://mckinsey.com",
-      "start_date": "01/01/2020",
-      "end_date": "11/01/2020",
+      "start_date": "Jan 2020",
+      "end_date": "Nov 2020",
       "summary": "Focused on automation and business analysis for internal applications",
       "highlights": [
         "Automated ITSM analysis with Alteryx workflows, achieving 80% reduction in turnaround time, enabled 50% cost savings compared to Excel model",
@@ -78,6 +78,16 @@
     }
   ],
   "projects": [
+    {
+      "title": "E-Commerce Analytics Pipeline",
+      "summary": "Serverless data pipeline with medallion architecture for e-commerce analytics",
+      "url": "https://docs.google.com/document/d/1L_YpSsvDuygdZa_SwVtKJmgNRnaqoj3d7mJxwDfO5cQ/edit?usp=sharing",
+      "highlights": [
+        "Built serverless data pipeline with medallion architecture processing 500K+ e-commerce events per batch",
+        "Implemented incremental ETL reducing Athena query costs through Parquet transformation and pre-aggregated analytical tables",
+        "Tech stack: AWS (S3, Lambda, Glue, Athena), Apache Spark, Parquet"
+      ]
+    },
     {
       "title": "Automated Vaux's Swift Counter",
       "summary": "Computer Vision system for wildlife conservation using advanced AI models",
@@ -96,6 +106,33 @@
         {
           "img_path": "portfolio_media/tracking-viz.png",
           "caption": "Trajectory Tracking Visualization"
+        }
+      ]
+    },
+    {
+      "title": "Online Engagement & Review Behavior Study",
+      "summary": "Causal inference analysis of business response behavior and review engagement",
+      "url": "https://drive.google.com/file/d/1eUWzzoVYYX-Gr0WgfCF15K04UIssMQoU/view?usp=sharing",
+      "highlights": [
+        "Analyzed 760K+ Google reviews using Difference-in-Differences methodology",
+        "Identified causal relationship between business response behavior and review engagement (DiD: +9.16 reviews, p < 0.001)",
+        "Tech stack: Polars, Python, Causal Inference"
+      ]
+    },
+    {
+      "title": "Quizzatron",
+      "summary": "AI-powered educational application for automated quiz generation",
+      "url": "https://quizzatron.netlify.app/",
+      "highlights": [
+        "Created an LLM-based quiz generation web application",
+        "Transforms prompts/PDFs into interactive assessments",
+        "Powered by Google Gemini models for natural language processing",
+        "Streamlined educational content creation process"
+      ],
+      "images": [
+        {
+          "img_path": "portfolio_media/quizzatron-home.png",
+          "caption": "Quiz Generation Interface"
         }
       ]
     },
@@ -119,23 +156,6 @@
           "caption": "Player Behavior Trends Visualization"
         }
       ]
-    },
-    {
-      "title": "Quizzatron",
-      "summary": "AI-powered educational application for automated quiz generation",
-      "url": "https://quizzatron.netlify.app/",
-      "highlights": [
-        "Created an LLM-based quiz generation web application",
-        "Transforms prompts/PDFs into interactive assessments",
-        "Powered by Google Gemini models for natural language processing",
-        "Streamlined educational content creation process"
-      ],
-      "images": [
-        {
-          "img_path": "portfolio_media/quizzatron-home.png",
-          "caption": "Quiz Generation Interface"
-        }
-      ]
     }
   ],
   "volunteer_experience": [],
@@ -150,7 +170,8 @@
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
-      "graduation_date": "03/01/2026"
+      "start_date": "Sep 2024",
+      "graduation_date": "Mar 2026"
     },
     {
       "institution": "PSG College of Technology",
@@ -162,31 +183,15 @@
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
-      "graduation_date": "09/01/2020"
+      "graduation_date": "Sep 2020"
     }
   ],
   "skills": [
-    {
-      "name": "Data Analysis"
-    },
-    {
-      "name": "Data Engineering"
-    },
-    {
-      "name": "Data Visualization"
-    },
-    {
-      "name": "ETL"
-    },
-    {
-      "name": "Predictive Analytics"
-    },
-    {
-      "name": "AI Engineering"
-    },
-    {
-      "name": "Product Ownership"
-    }
+    {"category": "Languages & Databases", "technologies": "Python, SQL, PostgreSQL, MongoDB, Snowflake"},
+    {"category": "Cloud & Data Engineering", "technologies": "AWS (S3, Lambda, Glue, Athena, Redshift), Spark, PySpark, Airflow, Polars"},
+    {"category": "Machine Learning & AI", "technologies": "PyTorch, Scikit-learn, Computer Vision, Agentic AI"},
+    {"category": "Data Visualization", "technologies": "Tableau, PowerBI, Streamlit"},
+    {"category": "Libraries & Tools", "technologies": "Pandas, NumPy, FastAPI, Git"}
   ],
   "interests": [
     {
@@ -222,13 +227,6 @@
     {
       "language": "Hindi",
       "fluency": "Conversational"
-    }
-  ],
-  "references": [
-    {
-      "name": "Available upon request",
-      "relation": "Professional References",
-      "reference": "Professional references from colleagues and academic advisors are available upon request."
     }
   ]
 }
