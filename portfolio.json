@@ -36,6 +36,19 @@
       ]
     },
     {
+      "company": "University of Washington",
+      "company_favicon": "portfolio_media/uw-favicon.png",
+      "position": "Energy Engineer",
+      "url": "https://www.washington.edu",
+      "start_date": "Jan 2025",
+      "end_date": "Jun 2025",
+      "summary": "Energy engineering internship (Data Analytics) with UW Facilities CEUO",
+      "highlights": [
+        "Created reports analyzing utility spend and calculated savings achieved by implementing energy savings measures",
+        "Created a database schema to store building, meters info, energy use along with financial details to build a virtual campus energy model"
+      ]
+    },
+    {
       "company": "McKinsey & Company",
       "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Data Analyst 1",
@@ -79,9 +92,35 @@
   ],
   "projects": [
     {
+      "title": "Sequel2SQL",
+      "summary": "Agentic LLM + RAG framework for PostgreSQL error diagnosis, optimization, and correction",
+      "url": "https://github.com/SVijayB/sequel2sql",
+      "slug": "sequel2sql",
+      "featured": true,
+      "tech_stack": ["Python", "PostgreSQL", "RAG", "LLM", "Docker", "Agentic AI"],
+      "project_date": "2026-03",
+      "repository_url": "https://github.com/SVijayB/sequel2sql",
+      "demo_url": null,
+      "detailed_description": "",
+      "highlights": [
+        "Developed agentic AI system combining LLM reasoning with RAG for PostgreSQL error diagnosis and query optimization",
+        "Leverages database schemas, official documentation, and previous correction examples for reliable SQL debugging",
+        "Capstone project at the University of Washington, sponsored by Microsoft",
+        "Supports multiple database engines via Docker (PostgreSQL, MySQL, Oracle, SQL Server)"
+      ],
+      "images": []
+    },
+    {
       "title": "E-Commerce Analytics Pipeline",
       "summary": "Serverless data pipeline with medallion architecture for e-commerce analytics",
       "url": "https://docs.google.com/document/d/1L_YpSsvDuygdZa_SwVtKJmgNRnaqoj3d7mJxwDfO5cQ/edit?usp=sharing",
+      "slug": "ecommerce-analytics-pipeline",
+      "featured": true,
+      "tech_stack": ["AWS S3", "AWS Lambda", "AWS Glue", "AWS Athena", "Apache Spark", "Parquet", "Python"],
+      "project_date": "2024-03",
+      "repository_url": null,
+      "demo_url": null,
+      "detailed_description": "",
       "highlights": [
         "Built serverless data pipeline with medallion architecture processing 500K+ e-commerce events per batch",
         "Implemented incremental ETL reducing Athena query costs through Parquet transformation and pre-aggregated analytical tables",
@@ -92,6 +131,13 @@
       "title": "Automated Vaux's Swift Counter",
       "summary": "Computer Vision system for wildlife conservation using advanced AI models",
       "url": "https://drive.google.com/file/d/1fFqaL-cKaJ_lOX340FORxQLu1cbeDNNu/view?usp=sharing",
+      "slug": "vauxs-swift-counter",
+      "featured": true,
+      "tech_stack": ["Python", "YOLOv11", "SAM2", "PyTorch", "OpenCV", "Computer Vision"],
+      "project_date": "2025-06",
+      "repository_url": null,
+      "demo_url": null,
+      "detailed_description": "",
       "highlights": [
         "Developed a multi-stage CV system integrating YOLOv11, SAM2 segmentation, and custom trajectory tracking",
         "Built for the Courtenay Museum's Vaux's Swift conservation project",
@@ -113,6 +159,13 @@
       "title": "Online Engagement & Review Behavior Study",
       "summary": "Causal inference analysis of business response behavior and review engagement",
       "url": "https://drive.google.com/file/d/1eUWzzoVYYX-Gr0WgfCF15K04UIssMQoU/view?usp=sharing",
+      "slug": "review-behavior-study",
+      "featured": true,
+      "tech_stack": ["Python", "Polars", "Pandas", "Causal Inference", "Statistics"],
+      "project_date": "2024-12",
+      "repository_url": null,
+      "demo_url": null,
+      "detailed_description": "",
       "highlights": [
         "Analyzed 760K+ Google reviews using Difference-in-Differences methodology",
         "Identified causal relationship between business response behavior and review engagement (DiD: +9.16 reviews, p < 0.001)",
@@ -123,6 +176,13 @@
       "title": "Quizzatron",
       "summary": "AI-powered educational application for automated quiz generation",
       "url": "https://quizzatron.netlify.app/",
+      "slug": "quizzatron",
+      "featured": true,
+      "tech_stack": ["Python", "Google Gemini", "LLM", "Streamlit", "NLP"],
+      "project_date": "2024-06",
+      "repository_url": null,
+      "demo_url": "https://quizzatron.netlify.app/",
+      "detailed_description": "",
       "highlights": [
         "Created an LLM-based quiz generation web application",
         "Transforms prompts/PDFs into interactive assessments",
@@ -140,6 +200,13 @@
       "title": "SteamViz",
       "summary": "Comprehensive data visualization dashboard analyzing Steam gaming market trends",
       "url": "https://public.tableau.com/app/profile/aravindh.manavalan/viz/DataViz_Steam_Dashboard_v1_7/GameExplorer",
+      "slug": "steamviz",
+      "featured": false,
+      "tech_stack": ["Tableau", "Python", "Data Visualization", "ETL", "Steam API"],
+      "project_date": "2024-11",
+      "repository_url": null,
+      "demo_url": "https://public.tableau.com/app/profile/aravindh.manavalan/viz/DataViz_Steam_Dashboard_v1_7/GameExplorer",
+      "detailed_description": "",
       "highlights": [
         "Built comprehensive data pipelines and Tableau dashboard analyzing Steam's top 100 games",
         "Uncovered market trends and player behavior patterns",
@@ -156,6 +223,25 @@
           "caption": "Player Behavior Trends Visualization"
         }
       ]
+    },
+    {
+      "title": "AWS CP Creds",
+      "summary": "Shell script for automating AWS credential updates from clipboard on macOS",
+      "url": null,
+      "slug": "aws-cp-creds",
+      "featured": false,
+      "tech_stack": ["Shell", "Bash", "macOS", "AWS CLI"],
+      "project_date": "2024-09",
+      "repository_url": "https://github.com/aravindh28/aws-cp-creds",
+      "demo_url": null,
+      "detailed_description": "",
+      "highlights": [
+        "Automated AWS credential updates from clipboard, eliminating manual editing of ~/.aws/credentials",
+        "40+ unique clones from classmates using it for AWS Academy homework and projects",
+        "Supports multiple AWS profiles with format validation and error handling",
+        "One-command installation via curl for quick setup"
+      ],
+      "images": []
     }
   ],
   "volunteer_experience": [],
@@ -227,6 +313,112 @@
     {
       "language": "Hindi",
       "fluency": "Conversational"
+    }
+  ],
+  "academic_projects": [
+    {
+      "title": "ASIC Implementation of AES Cryptographic Algorithm",
+      "summary": "AES-128/192/256 hardware accelerator for end-to-end encryption in edge devices",
+      "slug": "aes-hardware-implementation",
+      "detailed_description": "## Overview\n\nAES-128/192/256 hardware accelerator for end-to-end encryption in edge devices. Makes use of a 32-bit iterative core along with a KeyGen Module. Our team designed the Data Path, Control Path, KeyGen and IO Controller Modules and implemented the same. Successful Encryption/Decryption was achieved on the Basys-3 FPGA with an operating frequency of 100 MHz. Back-end design was done in collaboration with Semi Conductor Laboratory, Chandigarh.\n\n## Technical Implementation\n\n- **Core Architecture**: 32-bit iterative core with KeyGen module for AES-128/192/256\n- **Module Design**: Data Path, Control Path, KeyGen, and IO Controller modules\n- **FPGA Prototyping**: Successfully tested on Basys-3 FPGA at 100 MHz operating frequency\n- **Back-end Design**: Collaborated with Semi Conductor Laboratory, Chandigarh for ASIC back-end flow\n\n## Key Contributions\n\n- Designed the Data Path and Control Path modules\n- Implemented and verified individual transformation blocks (S-Box, MixColumns, etc.)\n- Conducted timing analysis and optimization to meet performance targets\n- Developed comprehensive testbenches for functional verification",
+      "tech_stack": ["Verilog", "Xilinx Vivado", "FPGA", "ASIC Design", "Cryptography"],
+      "project_date": "2020-03",
+      "highlights": [
+        "Built AES-128/192/256 hardware accelerator using 32-bit iterative core with KeyGen module",
+        "Achieved successful Encryption/Decryption on Basys-3 FPGA at 100 MHz",
+        "Collaborated with Semi Conductor Laboratory, Chandigarh for ASIC back-end design",
+        "Designed Data Path, Control Path, KeyGen, and IO Controller modules"
+      ],
+      "repository_url": null,
+      "demo_url": null,
+      "images": []
+    },
+    {
+      "title": "FPGA Implementation of Elliptic Curve Cryptography Algorithm",
+      "summary": "Custom processor design with ISA for performing ECC point operations using iterative resource sharing",
+      "slug": "ecc-cryptographic-processor",
+      "detailed_description": "## Overview\n\nDesigned and implemented a specialized cryptographic processor for Elliptic Curve Cryptography (ECC). Our team designed the core data path and control path modules for performing ECC operations with an Instruction Set Architecture using iterative resource sharing, similar to a microprocessor. A POC for Homomorphic extension of ECC was also developed.\n\n## Architecture Design\n\n- **Custom ISA**: Designed instruction set to perform Point Addition and Point Doubling operations with iterative resource sharing\n- **Datapath Design**: Implemented arithmetic units for finite field operations (addition, multiplication, inversion)\n- **Control Path**: Designed control logic to orchestrate ECC algorithms\n- **Homomorphic Extension**: Developed proof-of-concept for Homomorphic extension of ECC\n\n## Key Contributions\n\n- Designed the core data path and control path modules\n- Implemented ISA with iterative resource sharing concept\n- Developed POC for Homomorphic extension of ECC\n- Verified correctness against standard ECC test vectors",
+      "tech_stack": ["Verilog", "Xilinx Vivado", "FPGA", "Computer Architecture", "ECC", "Cryptography"],
+      "project_date": "2019-12",
+      "highlights": [
+        "Designed ISA for Point Addition and Point Doubling with iterative resource sharing",
+        "Implemented core data path and control path modules for ECC operations",
+        "Developed proof-of-concept for Homomorphic extension of ECC",
+        "Achieved successful encryption/decryption with standard ECC test vectors"
+      ],
+      "repository_url": null,
+      "demo_url": null,
+      "images": []
+    },
+    {
+      "title": "Surface Waste Accumulator Bot",
+      "summary": "Automated floating robot for collecting surface waste from water bodies using embedded systems",
+      "slug": "waste-accumulator-bot",
+      "detailed_description": "## Overview\n\nDeveloped an autonomous floating robot designed to accumulate surface waste from local water bodies, providing a cost-effective solution for environmental conservation. This project combines robotics, embedded systems programming, and environmental engineering.\n\n## Problem Statement\n\nLocal water bodies face significant pollution from floating debris and surface waste. Manual cleaning is labor-intensive and costly. This project aimed to create an automated, low-cost solution for continuous waste collection.\n\n## Technical Implementation\n\n### Hardware Design\n- **Platform**: Designed floating platform with stability for water operation\n- **Collection Mechanism**: Implemented mechanical system for waste capture and storage\n- **Motor Control**: DC motors with PWM control for navigation\n- **Sensors**: Ultrasonic and IR sensors for obstacle detection and navigation\n\n### Software Architecture\n- **Movement Algorithm**: Designed algorithm for efficient coverage of testing area\n- **Obstacle Avoidance**: Implemented real-time path planning to navigate around obstacles\n- **State Machine**: Developed finite state machine for behavior control\n- **Power Management**: Optimized for extended operation time\n\n## Key Contributions\n\n- Played a crucial role in designing the movement algorithm for the testing environment\n- Implemented embedded C code for Arduino microcontroller\n- Developed sensor fusion for navigation and obstacle detection\n- Conducted field testing and iterative improvements\n\n## Impact\n\nThis project demonstrates practical engineering skills applied to environmental problems, combining hardware design, embedded programming, and algorithm development to create a working prototype for water conservation.",
+      "tech_stack": ["Embedded C", "Arduino", "Robotics", "Motor Control", "Sensors", "Embedded Systems"],
+      "project_date": "2018-11",
+      "highlights": [
+        "Designed movement algorithm for autonomous navigation in water bodies",
+        "Implemented embedded C code for motor control and sensor integration",
+        "Developed obstacle avoidance system using ultrasonic and IR sensors",
+        "Created low-cost solution for environmental waste management"
+      ],
+      "repository_url": null,
+      "demo_url": null,
+      "images": []
+    },
+    {
+      "title": "Implementation of CLEFIA Cryptographic Algorithm",
+      "summary": "Hardware implementation of CLEFIA block cipher focusing on key scheduling and arithmetic blocks",
+      "slug": "clefia-cryptographic-algorithm",
+      "detailed_description": "## Overview\n\nImplemented hardware modules for the CLEFIA cryptographic algorithm, a block cipher designed for both software and hardware efficiency. This project focused on the Key Scheduling Algorithm (KSA) and critical arithmetic blocks required for the cipher operations.\n\n## About CLEFIA\n\nCLEFIA is a 128-bit block cipher supporting key lengths of 128, 192, and 256 bits. Developed by Sony, it's designed for high security and efficiency across various platforms, from embedded devices to high-performance systems.\n\n## Technical Implementation\n\n### Key Scheduling Algorithm (KSA)\n- **Main Focus**: Implemented complete key expansion logic\n- **Round Key Generation**: Designed hardware to generate round keys from master key\n- **Optimization**: Balanced area and timing for efficient FPGA implementation\n\n### Arithmetic Blocks\n- **S-Boxes**: Implemented substitution boxes for non-linear transformation\n- **Diffusion Functions**: Designed arithmetic blocks for data mixing (F-functions)\n- **XOR Networks**: Implemented whitening key operations\n\n## Key Contributions\n\n- Mainly worked on implementing the Key Scheduling Algorithm\n- Designed and implemented several arithmetic blocks for core cipher operations\n- Conducted functional verification and timing analysis\n- Integrated modules into complete CLEFIA encryption system\n\n## Technical Skills Demonstrated\n\n- Hardware description language (Verilog) proficiency\n- Understanding of block cipher design principles\n- FPGA synthesis and implementation using Xilinx ISE\n- Cryptographic algorithm analysis and implementation",
+      "tech_stack": ["Verilog", "Xilinx ISE", "FPGA", "Cryptography", "Block Ciphers"],
+      "project_date": "2018-09",
+      "highlights": [
+        "Implemented complete Key Scheduling Algorithm for round key generation",
+        "Designed arithmetic blocks including S-Boxes and diffusion functions",
+        "Achieved functional correctness verified against test vectors",
+        "Demonstrated breadth in cryptographic algorithm implementations"
+      ],
+      "repository_url": null,
+      "demo_url": null,
+      "images": []
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Cisco Certified Entry Network Technician (CCENT)",
+      "issuer": "Cisco",
+      "date": "2019-03",
+      "description": "Passed with a score of 924/1000. Demonstrates foundational knowledge in networking concepts, including IP addressing, routing, switching, and network troubleshooting.",
+      "credential_url": null
+    },
+    {
+      "title": "Academic Credit Courses in Computer Architecture",
+      "issuer": "PSG College of Technology",
+      "date": "2019-08",
+      "description": "Completed one-credit courses in System Level Verification Techniques and Methodologies, and Multicore Technology. Advanced coursework in hardware verification and parallel computing architectures.",
+      "credential_url": null
+    }
+  ],
+  "achievements": [
+    {
+      "title": "State Level Topper in Engineering Entrance Exams",
+      "description": "Rank 92 out of nearly 300,000 candidates with 99.9th percentile. Scored 98.6% overall.",
+      "date": "2016-05",
+      "category": "Academic"
+    },
+    {
+      "title": "IEEE SPAC Chairman",
+      "description": "Served as SPAC (Student Professional Awareness Committee) Chairman for IEEE Students Chapter 12951 for the academic year 2019-20. Led technical events, workshops, and student engagement initiatives.",
+      "date": "2019-08",
+      "category": "Leadership"
+    },
+    {
+      "title": "First Prize - State Level Deadlifting Competition",
+      "description": "Won first prize in the 65kg Weight Class at a state-level powerlifting competition organized by the Indian Bodybuilding Federation (IBF). Demonstrates dedication, discipline, and athletic achievement.",
+      "date": "2017-04",
+      "category": "Sports"
     }
   ]
 }

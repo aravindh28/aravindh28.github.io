@@ -1,7 +1,11 @@
 [project]
 name = "portfolio-generator"
 version = "0.1.0"
-description = "Add your description here"
+description = "Static portfolio website generator with Jinja2 templating and markdown support"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "jinja2>=3.1.0",
+    "markdown>=3.7.0",
+    "pygments>=2.18.0"
+]

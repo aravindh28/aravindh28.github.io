@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Info -->
+    <title>{{ name }} - Projects & Achievements</title>
+    <meta name="description" content="{{ name }} - Detailed showcase of professional projects, academic work, certifications, and achievements">
+    <meta name="author" content="{{ name }}">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="{{ name }} - Projects & Achievements">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/projects.html">
+    <meta property="og:image" content="{{ base_url }}/{{ image_path }}">
+    <meta property="og:image:alt" content="{{ name }} Profile Image">
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/modern_normalize.css" />
+    <link rel="stylesheet" href="css/html5bp.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Set a theme color -->
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="project-nav">
+          <a href="index.html">&#8592; Back to Portfolio</a>
+        </nav>
+        <h1>Projects & Achievements</h1>
+        <p class="header-summary">Comprehensive showcase of professional projects, academic work, and accomplishments</p>
+      </div>
+    </header>
+
+    <!-- Section Navigation TOC -->
+    <nav class="projects-nav-toc" id="projects-nav">
+      <div class="container">
+        <ul class="toc-sections">
+          <li class="toc-section">
+            <a href="#professional-projects" class="toc-section-link">
+              <span class="toc-icon">&#128640;</span>
+              <span>Projects</span>
+            </a>
+            <ul class="toc-items">
+              {% for project in projects %}
+              <li><a href="#{{ project.slug }}">{{ project.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+
+          {% if academic_projects %}
+          <li class="toc-section">
+            <a href="#academic-projects" class="toc-section-link">
+              <span class="toc-icon">&#127891;</span>
+              <span>Undergraduate Projects</span>
+            </a>
+            <ul class="toc-items">
+              {% for project in academic_projects %}
+              <li><a href="#{{ project.slug }}">{{ project.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endif %}
+
+          <li class="toc-section">
+            <a href="#certifications-achievements" class="toc-section-link">
+              <span class="toc-icon">&#127942;</span>
+              <span>Certifications & Achievements</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="page-content">
+      <div class="container">
+        <main class="projects-main">
+
+          <!-- Section 1: Projects -->
+          <section id="professional-projects" class="projects-section">
+            <h2 class="section-heading">Projects</h2>
+            <p class="section-intro">Data engineering, machine learning, and analytics projects from graduate studies and personal work</p>
+
+            {% for project in projects %}
+            <article id="{{ project.slug }}" class="project-detail-timeline">
+              <div class="project-date-column">
+                <div class="timeline-marker"></div>
+                {% if project.project_date %}
+                <time class="timeline-date">{{ project.project_date }}</time>
+                {% endif %}
+              </div>
+
+              <div class="project-content-column">
+                <header class="project-header">
+                  <h3>
+                    {% if project.url %}
+                      <a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.title }}</a>
+                    {% else %}
+                      {{ project.title }}
+                    {% endif %}
+                  </h3>
+                  <div class="project-meta">
+                    {% if project.tech_stack %}
+                    <span class="tech-stack">
+                      {% for tech in project.tech_stack %}
+                        <span class="tech-badge">{{ tech }}</span>
+                      {% endfor %}
+                    </span>
+                    {% endif %}
+                  </div>
+                </header>
+
+                <div class="project-content">
+                  {% if project.summary %}
+                  <p class="project-summary">{{ project.summary }}</p>
+                  {% endif %}
+
+                  {% if project.detailed_description %}
+                  <div class="markdown-content">
+                    {{ project.detailed_description | markdown | safe }}
+                  </div>
+                  {% endif %}
+
+                  {% if project.highlights %}
+                  <h4>Key Highlights</h4>
+                  <ul class="highlights-list">
+                    {% for highlight in project.highlights %}
+                    <li>{{ highlight }}</li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+
+                  {% if project.images %}
+                  <div class="gallery project-gallery">
+                    {% for img in project.images %}
+                    <figure>
+                      <img src="{{ img.img_path }}" alt="{{ img.caption }}">
+                      <figcaption>{{ img.caption }}</figcaption>
+                    </figure>
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+
+                  <div class="project-links">
+                    {% if project.url %}
+                    <a href="{{ project.url }}" target="_blank" rel="noopener" class="btn btn-primary">View Project Details</a>
+                    {% endif %}
+                    {% if project.repository_url %}
+                    <a href="{{ project.repository_url }}" target="_blank" rel="noopener" class="btn btn-secondary">View Code</a>
+                    {% endif %}
+                    {% if project.demo_url %}
+                    <a href="{{ project.demo_url }}" target="_blank" rel="noopener" class="btn btn-secondary">Live Demo</a>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </article>
+            {% endfor %}
+          </section>
+
+          <!-- Section 2: Undergraduate Projects -->
+          {% if academic_projects %}
+          <section id="academic-projects" class="projects-section">
+            <h2 class="section-heading">Undergraduate Projects</h2>
+            <p class="section-intro">Hardware and embedded systems projects from undergraduate studies in Electronics & Communication Engineering at PSG College of Technology</p>
+
+            {% for project in academic_projects %}
+            <article id="{{ project.slug }}" class="project-detail-timeline">
+              <div class="project-date-column">
+                <div class="timeline-marker"></div>
+                {% if project.project_date %}
+                <time class="timeline-date">{{ project.project_date }}</time>
+                {% endif %}
+              </div>
+
+              <div class="project-content-column">
+                <header class="project-header">
+                  <h3>{{ project.title }}</h3>
+                  <div class="project-meta">
+                    {% if project.tech_stack %}
+                    <span class="tech-stack">
+                      {% for tech in project.tech_stack %}
+                        <span class="tech-badge">{{ tech }}</span>
+                      {% endfor %}
+                    </span>
+                    {% endif %}
+                  </div>
+                </header>
+
+                <div class="project-content">
+                  {% if project.summary %}
+                  <p class="project-summary">{{ project.summary }}</p>
+                  {% endif %}
+
+                  {% if project.detailed_description %}
+                  <div class="markdown-content">
+                    {{ project.detailed_description | markdown | safe }}
+                  </div>
+                  {% endif %}
+
+                  {% if project.highlights %}
+                  <h4>Key Highlights</h4>
+                  <ul class="highlights-list">
+                    {% for highlight in project.highlights %}
+                    <li>{{ highlight }}</li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+
+                  {% if project.repository_url %}
+                  <div class="project-links">
+                    <a href="{{ project.repository_url }}" target="_blank" rel="noopener" class="btn btn-secondary">View Code</a>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </article>
+            {% endfor %}
+          </section>
+          {% endif %}
+
+          <!-- Section 3: Certifications & Achievements -->
+          <section id="certifications-achievements" class="projects-section certifications-section">
+            <h2 class="section-heading">Certifications & Achievements</h2>
+
+            {% if certifications %}
+            <div class="certifications-block">
+              <h3>Certifications</h3>
+              <ul class="certifications-list">
+                {% for cert in certifications %}
+                <li class="certification-item">
+                  <strong class="cert-title">{{ cert.title }}</strong>
+                  <span class="cert-meta">{{ cert.issuer }} &bull; {{ cert.date }}</span>
+                  <p class="cert-description">{{ cert.description }}</p>
+                  {% if cert.credential_url %}
+                  <a href="{{ cert.credential_url }}" target="_blank" rel="noopener" class="cert-link">View Credential &rarr;</a>
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if achievements %}
+            <div class="achievements-block">
+              <h3>Achievements</h3>
+              {% set achievements_by_category = achievements | groupby('category') %}
+              {% for category, items in achievements_by_category %}
+              <div class="achievement-category">
+                <h4>{{ category }}</h4>
+                <ul class="achievements-list">
+                  {% for achievement in items %}
+                  <li class="achievement-item">
+                    <strong class="achievement-title">{{ achievement.title }}</strong>
+                    <span class="achievement-date">({{ achievement.date }})</span>
+                    <p class="achievement-description">{{ achievement.description }}</p>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </section>
+
+        </main>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <p>&copy; {{ current_year }} {{ name }}. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Intersection Observer for active section highlighting
+        var sections = document.querySelectorAll('.projects-section');
+        var navLinks = document.querySelectorAll('.toc-section-link');
+
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              navLinks.forEach(function(link) { link.classList.remove('active'); });
+              var activeLink = document.querySelector('.toc-section-link[href="#' + entry.target.id + '"]');
+              if (activeLink) activeLink.classList.add('active');
+            }
+          });
+        }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+
+        sections.forEach(function(section) { observer.observe(section); });
+
+        // Mobile: tap to expand project list
+        if (window.innerWidth <= 768) {
+          document.querySelectorAll('.toc-section').forEach(function(section) {
+            var link = section.querySelector('.toc-section-link');
+            if (section.querySelector('.toc-items')) {
+              link.addEventListener('click', function(e) {
+                e.preventDefault();
+                section.classList.toggle('expanded');
+              });
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
