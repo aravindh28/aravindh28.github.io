@@ -55,7 +55,7 @@
       "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Data Analyst 1",
       "url": "https://mckinsey.com",
-      "start_date": "Jan 2020",
+      "start_date": "Aug 2022",
       "end_date": "Jul 2024",
       "summary": "",
       "highlights": [
@@ -69,7 +69,7 @@
       "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Junior Data Analyst",
       "url": "https://mckinsey.com",
-      "start_date": "Jan 2020",
+      "start_date": "Dec 2020",
       "end_date": "Jul 2022",
       "summary": "",
       "highlights": [
@@ -99,12 +99,7 @@
       "url": "https://github.com/SVijayB/sequel2sql",
       "slug": "sequel2sql",
       "featured": true,
-      "tech_stack": [
-        "Python",
-        "ChromaDB",
-        "PostgreSQL",
-        "PydanticAI"
-      ],
+      "tech_stack": ["Python", "PostgreSQL", "RAG", "LLM", "Docker", "Agentic AI"],
       "project_date": "2026-03",
       "repository_url": "https://github.com/SVijayB/sequel2sql",
       "demo_url": null,
@@ -120,11 +115,7 @@
       "url": "https://docs.google.com/document/d/1L_YpSsvDuygdZa_SwVtKJmgNRnaqoj3d7mJxwDfO5cQ/edit?usp=sharing",
       "slug": "ecommerce-analytics-pipeline",
       "featured": true,
-      "tech_stack": [
-        "AWS (S3, Lambda, Glue, Athena)",
-        "Spark",
-        "Parquet"
-      ],
+      "tech_stack": ["AWS S3", "AWS Lambda", "AWS Glue", "AWS Athena", "Apache Spark", "Parquet", "Python"],
       "project_date": "2024-03",
       "repository_url": null,
       "demo_url": null,
@@ -139,14 +130,7 @@
       "url": "https://drive.google.com/file/d/1fFqaL-cKaJ_lOX340FORxQLu1cbeDNNu/view?usp=sharing",
       "slug": "vauxs-swift-counter",
       "featured": true,
-      "tech_stack": [
-        "Python",
-        "YOLOv11",
-        "SAM2",
-        "PyTorch",
-        "OpenCV",
-        "Computer Vision"
-      ],
+      "tech_stack": ["Python", "YOLOv11", "SAM2", "PyTorch", "OpenCV", "Computer Vision"],
       "project_date": "2025-06",
       "repository_url": null,
       "demo_url": null,
@@ -173,11 +157,7 @@
       "url": "https://drive.google.com/file/d/1eUWzzoVYYX-Gr0WgfCF15K04UIssMQoU/view?usp=sharing",
       "slug": "review-behavior-study",
       "featured": true,
-      "tech_stack": [
-        "Polars",
-        "Python",
-        "Hypothesis Testing"
-      ],
+      "tech_stack": ["Python", "Polars", "Pandas", "Causal Inference", "Statistics"],
       "project_date": "2024-12",
       "repository_url": null,
       "demo_url": null,
@@ -192,13 +172,7 @@
       "url": "https://quizzatron.netlify.app/",
       "slug": "quizzatron",
       "featured": true,
-      "tech_stack": [
-        "Python",
-        "Google Gemini",
-        "LLM",
-        "Streamlit",
-        "NLP"
-      ],
+      "tech_stack": ["Python", "Google Gemini", "LLM", "Streamlit", "NLP"],
       "project_date": "2024-06",
       "repository_url": null,
       "demo_url": "https://quizzatron.netlify.app/",
@@ -221,13 +195,7 @@
       "url": "https://public.tableau.com/app/profile/aravindh.manavalan/viz/DataViz_Steam_Dashboard_v1_7/GameExplorer",
       "slug": "steamviz",
       "featured": false,
-      "tech_stack": [
-        "Tableau",
-        "Python",
-        "Data Visualization",
-        "ETL",
-        "Steam API"
-      ],
+      "tech_stack": ["Tableau", "Python", "Data Visualization", "ETL", "Steam API"],
       "project_date": "2024-11",
       "repository_url": null,
       "demo_url": "https://public.tableau.com/app/profile/aravindh.manavalan/viz/DataViz_Steam_Dashboard_v1_7/GameExplorer",
@@ -253,12 +221,7 @@
       "url": null,
       "slug": "aws-cp-creds",
       "featured": false,
-      "tech_stack": [
-        "Shell",
-        "Bash",
-        "macOS",
-        "AWS CLI"
-      ],
+      "tech_stack": ["Shell", "Bash", "macOS", "AWS CLI"],
       "project_date": "2024-09",
       "repository_url": "https://github.com/aravindh28/aws-cp-creds",
       "demo_url": null,
@@ -278,47 +241,33 @@
       "location": "Seattle, WA",
       "url": "https://www.washington.edu",
       "degrees": [
-        "M.S. in Data Science"
+        "Master of Science in Data Science"
       ],
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
       "start_date": "Sep 2024",
-      "graduation_date": "Mar 2026",
-      "details": "Coursework: Deep Learning, Statistical Machine Learning, Scalable Data Systems, Software Design"
+      "graduation_date": "Mar 2026"
     },
     {
       "institution": "PSG College of Technology",
       "location": "Coimbatore, India",
       "url": "https://www.psgtech.edu",
       "degrees": [
-        "B.E. in Electrical Engineering"
+        "Bachelor of Science in Electrical Engineering"
       ],
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
-      "start_date": "Jun 2016",
-      "graduation_date": "Sep 2020",
-      "details": "Coursework: Data Structures and Algorithms, Relational Database Management Systems"
+      "graduation_date": "Sep 2020"
     }
   ],
   "skills": [
-    {
-      "category": "Languages & Databases",
-      "technologies": "Python, SQL, PostgreSQL, Snowflake"
-    },
-    {
-      "category": "Analytics & Visualization",
-      "technologies": "Tableau, Power BI, Pandas, Polars, Streamlit"
-    },
-    {
-      "category": "Data Engineering",
-      "technologies": "AWS (S3, Lambda, Glue, Athena, Redshift), PySpark, Airflow, dbt, Alteryx"
-    },
-    {
-      "category": "ML & AI",
-      "technologies": "PyTorch, Scikit-learn, Computer Vision, LLMs, RAG, PydanticAI, AWS Bedrock"
-    }
+    {"category": "Languages & Databases", "technologies": "Python, SQL, PostgreSQL, MongoDB, Snowflake"},
+    {"category": "Cloud & Data Engineering", "technologies": "AWS (S3, Lambda, Glue, Athena, Redshift), Spark, PySpark, Airflow, Polars"},
+    {"category": "Machine Learning & AI", "technologies": "PyTorch, Scikit-learn, Computer Vision, Agentic AI"},
+    {"category": "Data Visualization", "technologies": "Tableau, PowerBI, Streamlit"},
+    {"category": "Libraries & Tools", "technologies": "Pandas, NumPy, FastAPI, Git"}
   ],
   "interests": [
     {
@@ -362,13 +311,7 @@
       "summary": "AES-128/192/256 hardware accelerator for end-to-end encryption in edge devices",
       "slug": "aes-hardware-implementation",
       "detailed_description": "## Overview\n\nAES-128/192/256 hardware accelerator for end-to-end encryption in edge devices. Makes use of a 32-bit iterative core along with a KeyGen Module. Our team designed the Data Path, Control Path, KeyGen and IO Controller Modules and implemented the same. Successful Encryption/Decryption was achieved on the Basys-3 FPGA with an operating frequency of 100 MHz. Back-end design was done in collaboration with Semi Conductor Laboratory, Chandigarh.\n\n## Technical Implementation\n\n- **Core Architecture**: 32-bit iterative core with KeyGen module for AES-128/192/256\n- **Module Design**: Data Path, Control Path, KeyGen, and IO Controller modules\n- **FPGA Prototyping**: Successfully tested on Basys-3 FPGA at 100 MHz operating frequency\n- **Back-end Design**: Collaborated with Semi Conductor Laboratory, Chandigarh for ASIC back-end flow\n\n## Key Contributions\n\n- Designed the Data Path and Control Path modules\n- Implemented and verified individual transformation blocks (S-Box, MixColumns, etc.)\n- Conducted timing analysis and optimization to meet performance targets\n- Developed comprehensive testbenches for functional verification",
-      "tech_stack": [
-        "Verilog",
-        "Xilinx Vivado",
-        "FPGA",
-        "ASIC Design",
-        "Cryptography"
-      ],
+      "tech_stack": ["Verilog", "Xilinx Vivado", "FPGA", "ASIC Design", "Cryptography"],
       "project_date": "2020-03",
       "highlights": [
         "Built AES-128/192/256 hardware accelerator using 32-bit iterative core with KeyGen module",
@@ -385,14 +328,7 @@
       "summary": "Custom processor design with ISA for performing ECC point operations using iterative resource sharing",
       "slug": "ecc-cryptographic-processor",
       "detailed_description": "## Overview\n\nDesigned and implemented a specialized cryptographic processor for Elliptic Curve Cryptography (ECC). Our team designed the core data path and control path modules for performing ECC operations with an Instruction Set Architecture using iterative resource sharing, similar to a microprocessor. A POC for Homomorphic extension of ECC was also developed.\n\n## Architecture Design\n\n- **Custom ISA**: Designed instruction set to perform Point Addition and Point Doubling operations with iterative resource sharing\n- **Datapath Design**: Implemented arithmetic units for finite field operations (addition, multiplication, inversion)\n- **Control Path**: Designed control logic to orchestrate ECC algorithms\n- **Homomorphic Extension**: Developed proof-of-concept for Homomorphic extension of ECC\n\n## Key Contributions\n\n- Designed the core data path and control path modules\n- Implemented ISA with iterative resource sharing concept\n- Developed POC for Homomorphic extension of ECC\n- Verified correctness against standard ECC test vectors",
-      "tech_stack": [
-        "Verilog",
-        "Xilinx Vivado",
-        "FPGA",
-        "Computer Architecture",
-        "ECC",
-        "Cryptography"
-      ],
+      "tech_stack": ["Verilog", "Xilinx Vivado", "FPGA", "Computer Architecture", "ECC", "Cryptography"],
       "project_date": "2019-12",
       "highlights": [
         "Designed ISA for Point Addition and Point Doubling with iterative resource sharing",
@@ -409,14 +345,7 @@
       "summary": "Automated floating robot for collecting surface waste from water bodies using embedded systems",
       "slug": "waste-accumulator-bot",
       "detailed_description": "## Overview\n\nDeveloped an autonomous floating robot designed to accumulate surface waste from local water bodies, providing a cost-effective solution for environmental conservation. This project combines robotics, embedded systems programming, and environmental engineering.\n\n## Problem Statement\n\nLocal water bodies face significant pollution from floating debris and surface waste. Manual cleaning is labor-intensive and costly. This project aimed to create an automated, low-cost solution for continuous waste collection.\n\n## Technical Implementation\n\n### Hardware Design\n- **Platform**: Designed floating platform with stability for water operation\n- **Collection Mechanism**: Implemented mechanical system for waste capture and storage\n- **Motor Control**: DC motors with PWM control for navigation\n- **Sensors**: Ultrasonic and IR sensors for obstacle detection and navigation\n\n### Software Architecture\n- **Movement Algorithm**: Designed algorithm for efficient coverage of testing area\n- **Obstacle Avoidance**: Implemented real-time path planning to navigate around obstacles\n- **State Machine**: Developed finite state machine for behavior control\n- **Power Management**: Optimized for extended operation time\n\n## Key Contributions\n\n- Played a crucial role in designing the movement algorithm for the testing environment\n- Implemented embedded C code for Arduino microcontroller\n- Developed sensor fusion for navigation and obstacle detection\n- Conducted field testing and iterative improvements\n\n## Impact\n\nThis project demonstrates practical engineering skills applied to environmental problems, combining hardware design, embedded programming, and algorithm development to create a working prototype for water conservation.",
-      "tech_stack": [
-        "Embedded C",
-        "Arduino",
-        "Robotics",
-        "Motor Control",
-        "Sensors",
-        "Embedded Systems"
-      ],
+      "tech_stack": ["Embedded C", "Arduino", "Robotics", "Motor Control", "Sensors", "Embedded Systems"],
       "project_date": "2018-11",
       "highlights": [
         "Designed movement algorithm for autonomous navigation in water bodies",
@@ -433,13 +362,7 @@
       "summary": "Hardware implementation of CLEFIA block cipher focusing on key scheduling and arithmetic blocks",
       "slug": "clefia-cryptographic-algorithm",
       "detailed_description": "## Overview\n\nImplemented hardware modules for the CLEFIA cryptographic algorithm, a block cipher designed for both software and hardware efficiency. This project focused on the Key Scheduling Algorithm (KSA) and critical arithmetic blocks required for the cipher operations.\n\n## About CLEFIA\n\nCLEFIA is a 128-bit block cipher supporting key lengths of 128, 192, and 256 bits. Developed by Sony, it's designed for high security and efficiency across various platforms, from embedded devices to high-performance systems.\n\n## Technical Implementation\n\n### Key Scheduling Algorithm (KSA)\n- **Main Focus**: Implemented complete key expansion logic\n- **Round Key Generation**: Designed hardware to generate round keys from master key\n- **Optimization**: Balanced area and timing for efficient FPGA implementation\n\n### Arithmetic Blocks\n- **S-Boxes**: Implemented substitution boxes for non-linear transformation\n- **Diffusion Functions**: Designed arithmetic blocks for data mixing (F-functions)\n- **XOR Networks**: Implemented whitening key operations\n\n## Key Contributions\n\n- Mainly worked on implementing the Key Scheduling Algorithm\n- Designed and implemented several arithmetic blocks for core cipher operations\n- Conducted functional verification and timing analysis\n- Integrated modules into complete CLEFIA encryption system\n\n## Technical Skills Demonstrated\n\n- Hardware description language (Verilog) proficiency\n- Understanding of block cipher design principles\n- FPGA synthesis and implementation using Xilinx ISE\n- Cryptographic algorithm analysis and implementation",
-      "tech_stack": [
-        "Verilog",
-        "Xilinx ISE",
-        "FPGA",
-        "Cryptography",
-        "Block Ciphers"
-      ],
+      "tech_stack": ["Verilog", "Xilinx ISE", "FPGA", "Cryptography", "Block Ciphers"],
       "project_date": "2018-09",
       "highlights": [
         "Implemented complete Key Scheduling Algorithm for round key generation",
