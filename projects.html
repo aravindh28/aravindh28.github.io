@@ -39,14 +39,16 @@
     <link rel="manifest" href="/site.webmanifest">
   </head>
 
-  <body>
+  <body class="projects-page">
+    <nav class="top-nav-bar" aria-label="Primary">
+      <div class="container top-nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+      </div>
+    </nav>
     <header class="page-header">
       <div class="container">
-        <nav class="project-nav">
-          <a href="index.html">&#8592; Back to Portfolio</a>
-        </nav>
         <h1>Projects & Achievements</h1>
-        <p class="header-summary">Comprehensive showcase of professional projects, academic work, and accomplishments</p>
       </div>
     </header>
 
@@ -115,17 +117,10 @@
           <!-- Section 1: Projects -->
           <section id="professional-projects" class="projects-section">
             <h2 class="section-heading">Projects</h2>
-            <p class="section-intro">Data engineering, machine learning, and analytics projects from graduate studies and personal work</p>
 
+            <div class="projects-grid">
             
             <article id="sequel2sql" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2026-03</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>
@@ -134,6 +129,9 @@
                     
                   </h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2026-03</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -182,13 +180,6 @@
             </article>
             
             <article id="ecommerce-analytics-pipeline" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2024-03</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>
@@ -197,6 +188,9 @@
                     
                   </h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2024-03</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -241,13 +235,6 @@
             </article>
             
             <article id="vauxs-swift-counter" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2025-06</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>
@@ -256,6 +243,9 @@
                     
                   </h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2025-06</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -324,13 +314,6 @@
             </article>
             
             <article id="review-behavior-study" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2024-12</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>
@@ -339,6 +322,9 @@
                     
                   </h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2024-12</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -364,7 +350,7 @@
                   <h4>Key Highlights</h4>
                   <ul class="highlights-list">
                     
-                    <li>Analyzed 760K+ Google reviews using matched treatment/control groups and paired t-tests; businesses that responded to reviews were associated with 9 additional reviews on average (p &lt; 0.001) versus non-responders.</li>
+                    <li>Analyzed 760K+ Google reviews using matched treatment/control groups and paired t-tests; businesses that responded to reviews were associated with 9 additional reviews on average versus non-responders.</li>
                     
                   </ul>
                   
@@ -383,13 +369,6 @@
             </article>
             
             <article id="quizzatron" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2024-06</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>
@@ -398,6 +377,9 @@
                     
                   </h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2024-06</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -461,13 +443,6 @@
             </article>
             
             <article id="steamviz" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2024-11</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>
@@ -476,6 +451,9 @@
                     
                   </h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2024-11</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -542,13 +520,6 @@
             </article>
             
             <article id="aws-cp-creds" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2024-09</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>
@@ -557,6 +528,9 @@
                     
                   </h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2024-09</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -606,6 +580,7 @@
               </div>
             </article>
             
+            </div>
           </section>
 
           <!-- Section 2: Undergraduate Projects -->
@@ -614,19 +589,16 @@
             <h2 class="section-heading">Undergraduate Projects</h2>
             <p class="section-intro">Hardware and embedded systems projects from undergraduate studies in Electronics & Communication Engineering at PSG College of Technology</p>
 
+            <div class="projects-grid">
             
             <article id="aes-hardware-implementation" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2020-03</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>ASIC Implementation of AES Cryptographic Algorithm</h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2020-03</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -692,17 +664,13 @@
             </article>
             
             <article id="ecc-cryptographic-processor" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2019-12</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>FPGA Implementation of Elliptic Curve Cryptography Algorithm</h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2019-12</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -770,17 +738,13 @@
             </article>
             
             <article id="waste-accumulator-bot" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2018-11</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>Surface Waste Accumulator Bot</h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2018-11</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -860,17 +824,13 @@
             </article>
             
             <article id="clefia-cryptographic-algorithm" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                
-                <time class="timeline-date">2018-09</time>
-                
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>Implementation of CLEFIA Cryptographic Algorithm</h3>
                   <div class="project-meta">
+                    
+                    <time class="project-date-chip">2018-09</time>
+                    
                     
                     <span class="tech-stack">
                       
@@ -950,6 +910,7 @@
               </div>
             </article>
             
+            </div>
           </section>
           
 
@@ -1031,12 +992,6 @@
         </main>
       </div>
     </div>
-
-    <footer class="page-footer">
-      <div class="container">
-        <p>&copy; 2026 Aravindh Manavalan. All rights reserved.</p>
-      </div>
-    </footer>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {

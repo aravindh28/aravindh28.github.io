@@ -39,14 +39,16 @@
     <link rel="manifest" href="/site.webmanifest">
   </head>
 
-  <body>
+  <body class="projects-page">
+    <nav class="top-nav-bar" aria-label="Primary">
+      <div class="container top-nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+      </div>
+    </nav>
     <header class="page-header">
       <div class="container">
-        <nav class="project-nav">
-          <a href="index.html">&#8592; Back to Portfolio</a>
-        </nav>
         <h1>Projects & Achievements</h1>
-        <p class="header-summary">Comprehensive showcase of professional projects, academic work, and accomplishments</p>
       </div>
     </header>
 
@@ -97,17 +99,10 @@
           <!-- Section 1: Projects -->
           <section id="professional-projects" class="projects-section">
             <h2 class="section-heading">Projects</h2>
-            <p class="section-intro">Data engineering, machine learning, and analytics projects from graduate studies and personal work</p>
 
+            <div class="projects-grid">
             {% for project in projects %}
             <article id="{{ project.slug }}" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                {% if project.project_date %}
-                <time class="timeline-date">{{ project.project_date }}</time>
-                {% endif %}
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>
@@ -118,6 +113,9 @@
                     {% endif %}
                   </h3>
                   <div class="project-meta">
+                    {% if project.project_date %}
+                    <time class="project-date-chip">{{ project.project_date }}</time>
+                    {% endif %}
                     {% if project.tech_stack %}
                     <span class="tech-stack">
                       {% for tech in project.tech_stack %}
@@ -174,6 +172,7 @@
               </div>
             </article>
             {% endfor %}
+            </div>
           </section>
 
           <!-- Section 2: Undergraduate Projects -->
@@ -182,19 +181,16 @@
             <h2 class="section-heading">Undergraduate Projects</h2>
             <p class="section-intro">Hardware and embedded systems projects from undergraduate studies in Electronics & Communication Engineering at PSG College of Technology</p>
 
+            <div class="projects-grid">
             {% for project in academic_projects %}
             <article id="{{ project.slug }}" class="project-detail-timeline">
-              <div class="project-date-column">
-                <div class="timeline-marker"></div>
-                {% if project.project_date %}
-                <time class="timeline-date">{{ project.project_date }}</time>
-                {% endif %}
-              </div>
-
               <div class="project-content-column">
                 <header class="project-header">
                   <h3>{{ project.title }}</h3>
                   <div class="project-meta">
+                    {% if project.project_date %}
+                    <time class="project-date-chip">{{ project.project_date }}</time>
+                    {% endif %}
                     {% if project.tech_stack %}
                     <span class="tech-stack">
                       {% for tech in project.tech_stack %}
@@ -234,6 +230,7 @@
               </div>
             </article>
             {% endfor %}
+            </div>
           </section>
           {% endif %}
 
@@ -284,12 +281,6 @@
         </main>
       </div>
     </div>
-
-    <footer class="page-footer">
-      <div class="container">
-        <p>&copy; {{ current_year }} {{ name }}. All rights reserved.</p>
-      </div>
-    </footer>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {

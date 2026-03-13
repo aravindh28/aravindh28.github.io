@@ -38,6 +38,19 @@
       ]
     },
     {
+      "company": "University of Washington",
+      "company_favicon": "portfolio_media/uw-favicon.png",
+      "position": "Energy Engineer",
+      "url": "https://www.washington.edu",
+      "start_date": "Jan 2025",
+      "end_date": "Jun 2025",
+      "summary": "",
+      "highlights": [
+        "Created reports on utility spending and quantified savings from energy efficiency measures.",
+        "Designed a database schema for building, meter, energy-use, and financial data to support a virtual campus energy model."
+      ]
+    },
+    {
       "company": "McKinsey & Company",
       "company_favicon": "portfolio_media/mckinsey-favicon.png",
       "position": "Data Analyst 1",
@@ -63,6 +76,19 @@
         "Overhauled database setup and ETL pipelines for ITSM datasets across 10+ client transformations, adding KPIs and statistical analysis that supported client productivity improvements.",
         "Delivered IT cost optimization recommendations on the \"Ignite\" diagnostic product, including talent hiring strategy and the case for helpdesk automation through RPA.",
         "Reduced data preparation costs by 65% by automating ITSM data cleaning with Alteryx workflows, cutting turnaround time by 80%."
+      ]
+    },
+    {
+      "company": "McKinsey & Company",
+      "company_favicon": "portfolio_media/mckinsey-favicon.png",
+      "position": "Solution Delivery Intern",
+      "url": "https://mckinsey.com",
+      "start_date": "Jan 2020",
+      "end_date": "Nov 2020",
+      "summary": "",
+      "highlights": [
+        "Automated ITSM analysis with Alteryx workflows, reducing turnaround time by 80% and lowering data preparation cost versus manual Excel workflows.",
+        "Worked as a business analyst for an internal web application by gathering requirements with stakeholders and helping run UAT sessions."
       ]
     }
   ],
@@ -157,7 +183,7 @@
       "demo_url": null,
       "detailed_description": "",
       "highlights": [
-        "Analyzed 760K+ Google reviews using matched treatment/control groups and paired t-tests; businesses that responded to reviews were associated with 9 additional reviews on average (p < 0.001) versus non-responders."
+        "Analyzed 760K+ Google reviews using matched treatment/control groups and paired t-tests; businesses that responded to reviews were associated with 9 additional reviews on average versus non-responders."
       ]
     },
     {

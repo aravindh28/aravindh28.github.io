@@ -155,6 +155,38 @@ section {
   gap: 1rem;
 }
 
+.top-nav-bar {
+  background: #1f344a;
+  border-bottom: 1px solid #314a61;
+}
+
+.top-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 3rem;
+}
+
+.top-nav-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  color: #e8f1fb !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.top-nav-links a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+}
+
+.top-nav-links a.active {
+  background: rgba(255, 255, 255, 0.22);
+}
+
 .company-favicon {
   width: 20px;
   height: 20px;
@@ -411,7 +443,7 @@ blockquote {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 1rem 0;
+  padding: 0.65rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -433,13 +465,13 @@ blockquote {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.55rem 1.1rem;
+  padding: 0.45rem 0.9rem;
   background: white;
   border: 2px solid #d0d0d0;
   border-radius: 6px;
   text-decoration: none !important;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: all 0.2s ease;
   color: #333 !important;
 }
@@ -516,68 +548,39 @@ html {
   margin: 0 auto;
 }
 
+.projects-page .page-content .container {
+  display: block;
+  max-width: 1320px;
+}
+
+.projects-page .projects-main {
+  max-width: none;
+}
+
 .projects-section {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   scroll-margin-top: 80px;
 }
 
-/* Timeline Project Layout */
-.project-detail-timeline {
+/* Compact Project Layout */
+.projects-grid {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.project-detail-timeline {
+  margin-bottom: 0;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  border: 1px solid #e2e7ee;
+  border-radius: 8px;
   border-bottom: 1px solid #e0e0e0;
-  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
 .project-detail-timeline:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-/* Date column with timeline line */
-.project-date-column {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 1.5rem;
-}
-
-.project-date-column::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: -2.5rem;
-  width: 2px;
-  background: #d0d0d0;
-}
-
-.project-detail-timeline:last-child .project-date-column::after {
-  bottom: 0;
-}
-
-.timeline-marker {
-  position: absolute;
-  right: -7px;
-  top: 6px;
-  width: 16px;
-  height: 16px;
-  background: white;
-  border: 3px solid var(--link-color);
-  border-radius: 50%;
-  z-index: 10;
-}
-
-.timeline-date {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--link-color);
-  text-align: right;
-  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
 }
 
 /* Content column */
@@ -587,11 +590,11 @@ html {
 
 /* Section Intro Text */
 .section-intro {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .section-intro a {
@@ -622,24 +625,36 @@ html {
 
 /* Project Header */
 .project-header h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   color: #222;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
 }
 
 .project-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.8rem;
   color: #666;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
 }
 
 .project-meta time {
   font-weight: 500;
   color: #555;
+}
+
+.project-date-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: #eaf3fb;
+  border: 1px solid #cfe2f5;
+  color: #1e5c8f;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 /* Tech Stack Badges */
@@ -651,11 +666,11 @@ html {
 
 .tech-badge {
   display: inline-block;
-  padding: 0.25rem 0.65rem;
+  padding: 0.2rem 0.5rem;
   background: #f0f0f0;
   border: 1px solid #d0d0d0;
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   color: #444;
   font-weight: 500;
   white-space: nowrap;
@@ -663,19 +678,19 @@ html {
 
 /* Project Content */
 .project-content {
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 .project-summary {
-  font-size: 1.05rem;
+  font-size: 0.97rem;
   color: #333;
-  margin-bottom: 1.25rem;
-  font-weight: 500;
-  line-height: 1.6;
+  margin-bottom: 0.7rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .highlights-list {
-  margin: 1rem 0;
+  margin: 0.55rem 0;
 }
 
 /* Markdown Content Styling */
@@ -781,24 +796,24 @@ html {
 /* Project Gallery */
 .project-gallery {
   grid-template-columns: 1fr;
-  margin: 2rem 0;
+  margin: 1rem 0 0.75rem;
 }
 
 /* Project Links/Buttons */
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.65rem 1.25rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.86rem;
   transition: all 0.2s ease;
   border: 2px solid transparent;
   cursor: pointer;
@@ -835,14 +850,14 @@ html {
    ======================================== */
 
 .certifications-section {
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
   border-top: 2px solid #ddd;
 }
 
 .certifications-block,
 .achievements-block {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .certifications-block h3,
@@ -859,8 +874,8 @@ html {
 }
 
 .certification-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
 }
 
@@ -895,7 +910,7 @@ html {
 
 /* Achievements */
 .achievement-category {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .achievement-category h4 {
@@ -911,10 +926,10 @@ html {
 }
 
 .achievement-item {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.85rem;
   padding-left: 1.25rem;
   border-left: 3px solid var(--link-color);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .achievement-title {
@@ -939,29 +954,7 @@ html {
 /* Mobile: Stack timeline vertically */
 @media (max-width: 768px) {
   .project-detail-timeline {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .project-date-column {
-    align-items: flex-start;
-    padding-right: 0;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.75rem;
-    border-bottom: 2px solid var(--link-color);
-  }
-
-  .project-date-column::after {
-    display: none;
-  }
-
-  .timeline-marker {
-    display: none;
-  }
-
-  .timeline-date {
-    text-align: left;
-    font-size: 0.9rem;
+    padding: 0.85rem;
   }
 
   .toc-sections {
@@ -1003,6 +996,16 @@ html {
 
   .project-gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-detail-timeline {
+    height: 100%;
   }
 }
 
@@ -1050,6 +1053,10 @@ html {
     grid-template-columns: 2fr 1fr;
   }
 
+  .projects-page .page-content .container {
+    grid-template-columns: 1fr;
+  }
+
   .header-top {
     gap: 2rem;
   }
@@ -1078,6 +1085,10 @@ html {
 
   .side-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .projects-page .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
